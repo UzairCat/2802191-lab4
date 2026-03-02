@@ -30,6 +30,24 @@
     margin-top: 12px;
 }
 
+.border-grid .border-item {
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  text-align: center;
+  overflow: hidden; /* prevents bleed/overlap */
+}
+
+.border-grid .border-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px auto 0;
+  max-height: 80px; /* key: stop massive SVGs */
+  object-fit: contain;
+}
+
 .error {
     color: #980000/* error color */;
     /* Additional styling */
