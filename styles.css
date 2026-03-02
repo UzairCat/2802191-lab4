@@ -1,0 +1,44 @@
+.spinner {
+    /* Your styling */
+  width: 50px;
+  height: 50px;
+  margin: 16px auto;
+  border: 6px solid #ddd;
+  border-top: 6px solid #333;
+  border-radius: 50%;
+    animation: spin 1s linear infinite; /* Required */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.country-card {
+    background: #5c5c5c;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    margin-bottom: 16px;
+}
+
+.border-grid {
+    display: grid; /* or display: flex */
+    /* Additional layout properties */
+    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.error {
+    color: #980000/* error color */;
+    /* Additional styling */
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #333
+}
+
+.hidden {
+    display: none;
+}
