@@ -1,12 +1,11 @@
 .spinner {
-    /* Your styling */
   width: 50px;
   height: 50px;
   margin: 16px auto;
   border: 6px solid #ddd;
   border-top: 6px solid #333;
   border-radius: 50%;
-    animation: spin 1s linear infinite; /* Required */
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -23,34 +22,14 @@
 }
 
 .border-grid {
-    display: grid; /* or display: flex */
-    /* Additional layout properties */
-    grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+    display: grid; 
     gap: 12px;
     margin-top: 12px;
 }
 
-.border-grid .border-item {
-  background: #97b0d0;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
-  text-align: center;
-  overflow: hidden; /* prevents bleed/overlap */
-}
-
-.border-grid .border-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 8px auto 0;
-  max-height: 80px; /* key: stop massive SVGs */
-  object-fit: contain;
-}
 
 .error {
-    color: #980000/* error color */;
-    /* Additional styling */
+    color: #980000;
     margin-top: 14px;
     padding: 12px;
     border-radius: 8px;
